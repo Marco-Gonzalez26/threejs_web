@@ -20,10 +20,7 @@ import {
 
 const Customizer = () => {
   const snap = useSnapshot(state)
-  const apiUrl =
-    process.env === 'development'
-      ? config.development.backendUrl
-      : config.production.backendUrl
+
 
   const [file, setFile] = useState('')
 
