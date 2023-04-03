@@ -167,6 +167,9 @@ const Customizer = () => {
                 }}
               />
             ))}
+            <motion.div className='tab-btn' onClick={downloadCanvasToImage}>
+              <img src={download} className='' />
+            </motion.div>
           </motion.div>
         </>
       )}
