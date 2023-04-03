@@ -9,4 +9,5 @@ const state = proxy({
   fullDecal: './threejs.png'
 })
 
+
 export default state
