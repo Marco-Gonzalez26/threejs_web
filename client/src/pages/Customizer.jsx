@@ -21,7 +21,6 @@ import {
 const Customizer = () => {
   const snap = useSnapshot(state)
 
-
   const [file, setFile] = useState('')
 
   const [prompt, setPrompt] = useState('')
@@ -72,7 +71,7 @@ const Customizer = () => {
         }
       )
       const data = await response.json()
-
+      console.log(data)
       handleDecals(type, `data:image/png;base64,${data.photo}`)
     } catch (error) {
       alert(error)
